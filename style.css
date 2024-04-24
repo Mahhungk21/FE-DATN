@@ -124,7 +124,14 @@ header .image-text .profession {
     margin-top: -2px;
     display: block;
 }
-
+/* reset bootrap */
+.sidebar .menu-link{
+    padding: 0;
+}
+.sidebar .menu-link .nav-link{
+    padding: 0;
+}
+/* ===================== */
 .sidebar header .image {
     display: flex;
     align-items: center;
@@ -307,3 +314,4 @@ body.dark .switch::before {
 body.dark .home .text {
     color: var(--text-color);
 }
+
