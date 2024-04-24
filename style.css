@@ -15,6 +15,7 @@
     --primary-color-light: #f6f5ff;
     --toggle-color: #ddd;
     --text-color: #707070;
+    --icon-color:#5BBCFF;
 
     /* ====== Transition ====== */
     --tran-03: all 0.2s ease;
@@ -288,7 +289,7 @@ body.dark .mode .sun-moon i.moon {
 body.dark .switch::before {
     left: 20px;
 }
-
+/* =================SECTION================= */
 .home {
     position: absolute;
     top: 0;
@@ -299,11 +300,13 @@ body.dark .switch::before {
     background-color: var(--body-color);
     transition: var(--tran-05);
 }
-.home .text {
+.home > .text {
     font-size: 30px;
     font-weight: 500;
     color: var(--text-color);
     padding: 12px 60px;
+    border-bottom: 1px solid black;
+    color: black
 }
 
 .sidebar.close ~ .home {
@@ -315,3 +318,48 @@ body.dark .home .text {
     color: var(--text-color);
 }
 
+/* topp */
+.home .top{
+    height: 80px;
+    padding: 20px;
+    display: flex;
+    background-color: var(--sidebar-color);
+    justify-content: space-between;
+}
+
+.home .top img{
+    width: 40px;
+    border-radius:999px;
+}
+
+.home-content{
+    padding: 10px;
+}
+
+.home-content .overview .title{
+    display: flex;
+    align-items: center;
+    margin: 25px 50px;
+    gap: 10px;
+}
+
+.home-content .overview .title .icon{
+    position: relative;
+    height: 50px;
+    width: 50px;
+    background-color: var(--icon-color);
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+}
+.home-content .overview .title .text{
+    font-size: 16px;
+    font-weight: 500;
+    margin-left: 10px;
+}
+
+.home .mode .button{
+    gap: 30px;
+}

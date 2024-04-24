@@ -7,7 +7,6 @@
         <!----======== CSS ======== -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <link rel="stylesheet" href="style.css" />
-
         <!----===== Boxicons CSS ===== -->
         <link
             href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
@@ -129,12 +128,122 @@
                 </div>
             </div>
         </nav>
-
+        <!-- SECTION -->
         <section class="home">
-            <div class="top"></div>
-            <div class="text">Dashboard Sidebar</div>
+            <div class="top">
+                <i class='bx bxs-down-arrow'></i>
+                <img src="./img/people.jpg" alt=""/>
+            </div>
+            <!-- Thong so -->
+            <div class="text">Các thông số môi trường</div>
+            <div class="home-content">
+                <div class="overview d-flex">
+                    <div class="title">
+                        <span class="material-symbols-outlined icon">
+                            device_thermostat
+                            </span>
+                        <div class="d-flex flex-column align-items-center">
+                            <span class="text">Nhiệt độ</span>
+                            <span class="text">30°C</span>
+                        </div>
+                    </div>
+                    <div class="title">
+                        <span class="material-symbols-outlined icon">
+                            humidity_mid
+                        </span>
+                            <div class="d-flex flex-column align-items-center">
+                                <span class="text">Độ ẩm đất</span>
+                                <span class="text">30%</span>
+                            </div>
+                    </div>
+                    <div class="title">
+                        <span class="material-symbols-outlined icon">
+                            humidity_percentage
+                        </span>
+                            <div class="d-flex flex-column align-items-center">
+                                <span class="text">Độ ẩm không khí</span>
+                                <span class="text">30%</span>
+                            </div>
+                    </div>
+                    <div class="title">
+                        <span class="material-symbols-outlined icon">
+                            wb_sunny
+                        </span>
+                            <div class="d-flex flex-column align-items-center">
+                                <span class="text">Ánh sáng</span>
+                                <span class="text">100 Lux</span>
+                            </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Dieu khien -->
+            <div class="text">Điều khiển động cơ</div>
+            <div class="mode">
+                <div class="button d-flex align-items-center m-4">
+                    <div class="text">Chế độ</div>
+                    <button class="btn btn-danger">Tự động</button>
+                    <button class="btn btn-primary">Thủ công</button>
+                </div>
+            </div>
+            <!-- control -->
+            <div class="p-5">
+                <table class="table text-center">
+                    <thead class="table-primary">
+                        <tr>
+                            <th scope="col">Số thứ tự</th>
+                            <th scope="col">Tên động cơ</th>
+                            <th scope="col">Pin</th>
+                            <th scope="col">ChipId</th>
+                            <th scope="col">Công tắc thiết bị</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Động cơ phun sương</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>
+                                <button
+                                    type="button"
+                                    class="btn btn-primary"
+                                >
+                                    Bật
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Động cơ phun sương</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>
+                                <button
+                                    type="button"
+                                    class="btn btn-primary"
+                                >
+                                    Bật
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>Động cơ phun sương</td>
+                            <td>1</td>
+                            <td>1</td>
+                            <td>
+                                <button
+                                    type="button"
+                                    class="btn btn-primary"
+                                >
+                                    Bật
+                                </button>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </section>
-
         <script>
             const body = document.querySelector("body"),
                 sidebar = body.querySelector("nav"),
