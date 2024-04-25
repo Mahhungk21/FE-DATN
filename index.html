@@ -6,6 +6,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <!----======== CSS ======== -->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="style.css" />
         <!----===== Boxicons CSS ===== -->
         <link
@@ -131,10 +133,28 @@
         <!-- SECTION -->
         <section class="home">
             <div class="top">
-                <i class='bx bxs-down-arrow'></i>
-                <img src="./img/people.jpg" alt=""/>
+                <div></div>
+                <div class="d-flex align-items-center">
+                    <span>Vườn 1</span>
+                    <span class="material-symbols-outlined">
+                        enable
+                        </span>
+                </div>
+                <div class="dropdown">
+                    <button class="btn btn-secondary btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="./img/people.jpg" alt=""/> admin
+                      </button>
+                    <ul class="dropdown-menu dropdown-menu-dark">
+                      <li><a class="dropdown-item active" href="#">Thông tin cá nhân</a></li>
+                      <li><a class="dropdown-item" href="#">Thông báo</a></li>
+                      <li><a class="dropdown-item" href="#">Trạng thái</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="#">Đăng xuất</a></li>
+                    </ul>
+                  </div>
             </div>
             <!-- Thong so -->
+            
             <div class="text">Các thông số môi trường</div>
             <div class="home-content">
                 <div class="overview d-flex">

@@ -15,7 +15,7 @@
     --primary-color-light: #f6f5ff;
     --toggle-color: #ddd;
     --text-color: #707070;
-    --icon-color:#5BBCFF;
+    --icon-color: #5bbcff;
 
     /* ====== Transition ====== */
     --tran-03: all 0.2s ease;
@@ -126,10 +126,10 @@ header .image-text .profession {
     display: block;
 }
 /* reset bootrap */
-.sidebar .menu-link{
+.sidebar .menu-link {
     padding: 0;
 }
-.sidebar .menu-link .nav-link{
+.sidebar .menu-link .nav-link {
     padding: 0;
 }
 /* ===================== */
@@ -306,7 +306,7 @@ body.dark .switch::before {
     color: var(--text-color);
     padding: 12px 60px;
     border-bottom: 1px solid black;
-    color: black
+    color: black;
 }
 
 .sidebar.close ~ .home {
@@ -319,31 +319,37 @@ body.dark .home .text {
 }
 
 /* topp */
-.home .top{
-    height: 80px;
+.home .top {
+    height: 60px;
     padding: 20px;
     display: flex;
     background-color: var(--sidebar-color);
     justify-content: space-between;
+    align-items: center;
 }
+.home .top i{
 
+}
 .home .top img{
-    width: 40px;
-    border-radius:999px;
+    /* margin-left: px; */
+}
+.home .top img {
+    width: 30px;
+    border-radius: 999px;
 }
 
-.home-content{
+.home-content {
     padding: 10px;
 }
 
-.home-content .overview .title{
+.home-content .overview .title {
     display: flex;
     align-items: center;
     margin: 25px 50px;
     gap: 10px;
 }
 
-.home-content .overview .title .icon{
+.home-content .overview .title .icon {
     position: relative;
     height: 50px;
     width: 50px;
@@ -354,12 +360,12 @@ body.dark .home .text {
     justify-content: center;
     font-size: 24px;
 }
-.home-content .overview .title .text{
+.home-content .overview .title .text {
     font-size: 16px;
     font-weight: 500;
     margin-left: 10px;
 }
 
-.home .mode .button{
+.home .mode .button {
     gap: 30px;
 }
