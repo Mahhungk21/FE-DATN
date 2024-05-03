@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    --fontColor: #676c70;
+    --main-color: #676c70;
+    --black: #222;
+    --white: #fff;
+    --light-black: #777;
+    --light-white: #fff9;
+    --dark-bg: rgba(0, 0, 0, .7);
+    --light-bg: #eee;
+    --border: .1rem solid var(--black);
+    --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    --text-shadow: 0 1.5rem 3rem rgba(0, 0, 0, .3);
+    --button-background: #428ACA;
+    --blue: #156CC0;
+    --red: #E61313;
+    --line-color: rgba(103, 108, 112, 0.5);
+}
+
+* {
+    font-family: Inter, sans-serif;
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    background-color: #F8F9FA;
+}
+
+section {
+    padding: 5rem 10%;
+}
+
+
+
+.header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: var(--white);
+    display: flex;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    box-shadow: var(--box-shadow);
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header .left-side {
+    display: flex;
+    align-items: center;
+}
+
+.header .left-side .logo a {
+    display: flex;
+    align-items: center;
+}
+
+.header .left-side .logo p {
+    font-size: 16px;
+    font-weight: bold;
+    color: black;
+    margin-left: 16px;
+}
+
+.header .left-side .logo img {
+    width: 55px;
+}
+
+.header .right-side a {
+    font-size: 16px;
+    color: #000000;
+}
+.header .right-side .login a{
+    color: rgb(255, 255, 255);
+}
+.header .abt{
+    text-align: center;
+    align-content: center;
+    
+
+}
+.header .blog{
+    text-align: center;
+    align-content: center;
+
+
+}
+.header .login{
+    text-align: center;
+    align-content: center;
+    height: 40px;
+    width: 100px;
+    background-color: black;
+    border-radius: 8%;
+
+}
+
+.header .right-side .login:hover {
+    text-decoration: underline;
+}
+
+.header .right-side {
+    display: flex;
+    align-items: center;
+    min-width: 500px;
+    height: 50px;
+    justify-content: space-around;
+}
+
+
+
+
+
+.body {
+    background-color: var(--white);
+    margin: 17px 10%;
+    padding: 16px;
+    min-height: 500px;
+}
+.main {
+    display: flex;
+    justify-content: center;
+}
+.main img {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.main .home-title {
+    position: absolute;
+}
+
+.main .home-title .school-name {
+    font-size: 50px;
+    color: #106BBF;
+    font-weight: 800;
+    font-family:  'Bowlby One';
+    text-align: center;
+}
+
+.main .home-title .service-name {
+    font-size: 20px;
+    color: #2096F3;
+    font-weight: 300;
+    text-align: center;
+}
+
+
+.footer {
+    background-color: #569edd;
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+.footer .box-container .box h3 {
+    color: var(--white);
+    font-size: 2.5rem;
+    padding-bottom: 2rem;
+    text-align: center;
+    text-transform: capitalize;
+}
+.footer .box-container .box h4 {
+    color: var(--white);
+    font-size: 2rem;
+    font-weight: 300;
+    padding-bottom: 2rem;
+    text-align: center;
+}
