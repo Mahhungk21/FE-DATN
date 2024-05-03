@@ -301,7 +301,7 @@ body.dark .switch::before {
     transition: var(--tran-05);
 }
 .home > .text {
-    font-size: 30px;
+    font-size: 26px;
     font-weight: 500;
     color: var(--text-color);
     padding: 12px 60px;
@@ -326,6 +326,7 @@ body.dark .home .text {
     background-color: var(--sidebar-color);
     justify-content: space-between;
     align-items: center;
+    transition: var(--tran-05);
 }
 .home .top i{
 
